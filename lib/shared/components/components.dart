@@ -76,9 +76,13 @@ Widget buildTaskItem(Map model, context) => Dismissible(
         child: Row(
           children: [
             CircleAvatar(
+              backgroundColor: Colors.teal[200],
               radius: 40,
               child: Text(
                 '${model['time']}',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
             SizedBox(
